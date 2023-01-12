@@ -5,11 +5,11 @@ const links = [
     linkAnchor: "http://youtube.com"
     },
     
-    {
-        iconAlt: "Twitter Icon", 
-        iconURL: "",
-        linkAnchor: "http://twitter.com"
-    },
+    // {
+    //     iconAlt: "Twitter Icon", 
+    //     iconURL: "./icons/logo blue.svg",
+    //     linkAnchor: "http://twitter.com"
+    // },
     
     {iconURL: "./icons/github-mark.png",
     iconAlt: "GitHub Icon", 
@@ -35,9 +35,6 @@ function SocialList() {
         <h2>My Socials</h2>
         <ul>
             {linkList}
-            {/* <li><a href="#"><img src="" alt="youtube-icon"/></a></li>
-            <li><a href="#"><img src="" alt="twitter-icon"/></a></li>
-            <li><a href="#"><img src="" alt="github-icon"/></a></li> */}
         </ul>
     </div>
     )
