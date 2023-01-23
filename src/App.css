@@ -1,9 +1,33 @@
+:root{
+  --socials-background: #949494; 
+} 
+
+body {
+  background: #424242;
+}
+body a{
+  color: white;
+}
 .wrapper {
   padding: 0px 10px;
-  /* color: #fefefe; */
+  margin: 0 auto;
+  color: white;
+}
+.wrapper span {
+  color: white;
 }
 
+.introduction {
+  text-align: center;
+}
 
+.introduction h1 {
+  margin: 0;
+}
+.introduction img {
+  max-height: 128px;
+  border-radius: 50%;
+}
 .SocialsList {
   text-align: center;
   margin: 0 auto;
@@ -17,6 +41,10 @@
 	justify-content: center;
 }
 
+.SocialsList h1, h2, h3, h4, h5, h6 {
+margin: 0;
+}
+
 .socials-item {
   padding: 5px;
   max-height: 125px;
@@ -25,6 +53,7 @@
 .socialsLink img {
   min-height: 20px;
   max-height: 32px;
+  filter: drop-shadow(1px 3px 1px #222222);
 }
 
 .socialsLink {
@@ -37,4 +66,61 @@
   padding: 0px;
   margin: 0px;
   list-style: none;
+}
+
+.mobile-only button {
+  background: none;
+  border: none;
+  padding: 5px;
+}
+.mobile-only span {
+  font-size: 2rem;
+}
+
+.desktop-only {
+  display: none;
+}
+
+/* Desktop */
+@media only screen and (min-width: 800px) {
+  .wrapper {
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .desktop-only {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-navbar {
+    background-color: #222222;
+    margin-bottom: 5px;
+  }
+
+  .desktop-navbar ul {
+    display: flex;
+  }
+  .desktop-navbar li {
+    margin: 0 2px;
+    display: contents;
+  }
+  .desktop-navbar a {
+    padding: 0.75em;
+    font-family:sans-serif;
+    text-decoration: none;
+
+  }
+  .desktop-navbar a:hover {
+    background-color: #121212;
+ }
+  
+  .desktop-navbar ul:first-child {
+    padding-left: 10px;
+  }
+  
+  
 }

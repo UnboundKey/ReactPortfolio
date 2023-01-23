@@ -27,9 +27,11 @@ const navigationItems = [
 function NavigationBar() {
     var navItems = navigationItems.map(i => <li><a href={i.link}>{i.name}</a></li>)
     return (<>
-    <ul>
-        {navItems}
-    </ul>
+    <div class="navbar desktop-navbar desktop-only">
+        <ul>
+            {navItems}
+        </ul>
+    </div>
     
     </>)
 }
@@ -42,7 +44,11 @@ function MobileNavigationBar() {
     if(showNavBar) {
         return(
             <div className="navbar mobile-only">
-                <button onClick={() => setShowNavBar(!showNavBar)}>Toggle Mobile Menu</button>
+                <button onClick={() => setShowNavBar(!showNavBar)}>
+                <span class="material-symbols-outlined">
+                close
+                </span>
+                </button>
                 <ul>
                     {navItems}
                 </ul>
@@ -50,8 +56,12 @@ function MobileNavigationBar() {
             );
     }
         return(
-        <div className="navbar">
-        <button onClick={() => setShowNavBar(!showNavBar)}>Toggle Mobile Menu</button>
+        <div className="navbar mobile-only">
+        <button onClick={() => setShowNavBar(!showNavBar)}>
+        <span class="material-symbols-outlined">
+        menu
+        </span>
+        </button>
         </div>
         );
 }

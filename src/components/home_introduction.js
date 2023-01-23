@@ -1,8 +1,8 @@
 function Introduction() {
     return (
-    <div>
+    <div className="introduction">
+        <img src="./Render Eevee gay.png"/>
         <h1>Benjamin Nordin</h1>
-        <p>Software Developer with too many interests</p>
     </div>
     )
 }
