@@ -125,6 +125,8 @@ margin: 0;
   .desktop-navbar ul:first-child {
     padding-left: 10px;
   }
-  
+  footer {
+    text-align: center;
+  }
   
 }
