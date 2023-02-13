@@ -85,7 +85,6 @@ margin: 0;
 @media only screen and (min-width: 800px) {
   .wrapper {
     padding: 0;
-    max-width: 1200px;
     margin: 0 auto;
   }
   
@@ -96,9 +95,14 @@ margin: 0;
     display: none;
   }
 
+  .desktop-navbar-wrapper {
+    background: #222222;
+  }
+
   .desktop-navbar {
-    background-color: #222222;
     margin-bottom: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .desktop-navbar ul {
@@ -121,6 +125,8 @@ margin: 0;
   .desktop-navbar ul:first-child {
     padding-left: 10px;
   }
-  
+  footer {
+    text-align: center;
+  }
   
 }
