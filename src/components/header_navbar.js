@@ -4,22 +4,22 @@ import { useState } from "react";
 const navigationItems = [
     {
         name: "Home",
-        icon: "",
+        icon: "home",
         link: "",
     },
     {
         name: "Projects",
-        icon: "",
+        icon: "terminal",
         link: "",
     },
     {
         name: "Blog",
-        icon: "",
+        icon: "summarize",
         link: "",
     },
     {
         name: "Contact",
-        icon: "",
+        icon: "person",
         link: "",
     },
 ]
